@@ -1,0 +1,49 @@
+{%extends 'web_site/base.html'%}
+{%load static%}
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Alien Game</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+  </head>
+
+  <body>
+    {%block content%}
+    <div class="container">
+      <center>
+        <br>
+        <div class="container fs-2 mt-5">
+          <p class="text-center"> Alien Game </p>
+        </div>
+
+        <div class="card" style="width: 40rem;">
+          <img src="{%static 'images/bg1.png'%}" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sobre</h5>
+            <p class="card-text">Esse é um projeto experimental de um jogo em que Alien estão tentando eliminar
+              a humanidade da terra, e seu objetivo é derrotar a maior quantidade de alienígenas possível. O jogo
+              se passa no espaço, o jogador controla diferentes naves que contam com características únicas.
+            </p>
+            <img src="{%static 'images/nave.png'%}" alt="...">
+            <p class="card-text"><br></div>
+            <p class="card-text">Por enquanto, o jogo está em desenvolvimento, possívelmente estará disponível
+              entre dezembro e fevereiro.
+            <p>
+              <p class="card-text">Link de Download (Em Breve)</p>
+              <a class="card-text" href="https://www.instagram.com/nic.auersvalt/?fbclid=IwAR3LJJ8xl_Kd5FFOT_BQqM3hkuZslO-11zcxYUJgPLsy7uYtzO8pKEIP9qw">Instagram de Projetos</a>
+            <p class="card-text"><small class="text-muted">Versão 1.1</small></p>
+          </div>
+
+
+      </center>
+    </div>
+    {%endblock content%}
+  </body>
+
+</html>
